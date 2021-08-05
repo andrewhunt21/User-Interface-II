@@ -1,1 +1,197 @@
-/* Add CSS styling here */
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Universal */
+*{
+    border: 1px solid black;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: #F5F3F4;
+}
+
+/* header and navigation section */
+.verytop{
+    display: flex;
+    background-color: #D3D3D3;
+    opacity: 0.8;
+    height:25vh;
+    /* position:fixed; */
+    top:0;
+    width:100%;
+    align-items: center;
+}
+.verytop div{
+    display:flex;
+    flex-flow:column;
+    margin:5%;
+}
+.verytop h1{
+    font-size:5rem;
+    margin-bottom:5%;
+}
+.verytop div {
+    font-size:2rem;
+    width:33%;
+}
+nav{
+    display:flex;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color:black;
+    line-height: 3rem;
+    padding:5%;
+}
+
+/* about section */
+.about{
+    display: flex;
+    width:100%;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.mainimg{
+    background-image: url('../images/mainimg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:90%;
+    width:50%;
+    margin:1%;
+}
+.mainabout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 90%;
+    width: 50%;
+    margin: 1%;
+    margin-left: 2.5%;
+}
+h2{
+    font-size: 4rem;
+    margin-bottom: 2%;
+}
+.mainabout button{
+    width: 25%;
+    margin-bottom: 2%;
+    font-size: 2.5rem;
+}
+.mainabout p{
+    font-size: 2.5rem;
+}
+
+/* projects section */
+.projects{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    height:80vh;
+}
+.row1, .row2{
+    display: flex;
+    width: 100%;
+}
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:75%;
+    width:50%;
+    margin:2%;
+}
+.img1{
+    background-image: url('../images/img1.jpeg');
+}
+.img2{
+    background-image: url('../images/img2.jpeg');
+}
+.img3{
+    background-image: url('../images/img3.jpeg');
+}
+.img4{
+    background-image: url('../images/img4.jpeg');
+}
+.img5{
+    background-image: url('../images/img5.jpeg');
+}
+.img6{
+    background-image: url('../images/img6.jpeg');
+}
+.img7{
+    background-image: url('../images/img7.jpeg');
+}
+.img8{
+    background-image: url('../images/img8.jpeg');
+}
+
+/* footer */
+footer{
+    background-color: #D3D3D3;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+footer h3{
+    font-size: 3rem;
+    width: 125%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+footer button{
+    padding:1%;
+    width: 125%;
+    font-size: 2.5rem;
+}
