@@ -44,7 +44,7 @@ table {
 
 /* Universal */
 *{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 html{
     font-size: 62.5%;
@@ -194,4 +194,13 @@ footer button{
     padding:1%;
     width: 125%;
     font-size: 2.5rem;
+}
+
+/* media queries */
+@media (max-width:800px){
+
+}
+
+@media (max-width:500px){
+    
 }
