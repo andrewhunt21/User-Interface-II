@@ -199,10 +199,74 @@ footer button{
 /* media queries */
 @media (max-width:800px){
     .verytop h1{
-        font-size: 1.9rem;
+        font-size: 3rem;
+    }
+    h2{
+        margin-top: 5%;
+        font-size: 2.5rem;
+    }
+    .mainabout button{
+        width: 50%;
+    }
+    .mainabout p{
+        font-size: 2rem;
     }
 }
 
 @media (max-width:500px){
-
+    .verytop{
+        flex-direction: column;
+        height: 60vh;
+    }
+    .verytop nav{
+        flex-direction: column;
+    }
+    .verytop h1{
+        font-size: 2.5rem;
+    }
+    .about{
+        flex-direction: column;
+        height: 80vh;
+    }
+    .mainimg{
+        width: 90%;
+    }
+    .mainabout{
+        margin-top: 20%;
+        height: 20vh;
+        margin-left: 0;
+    }
+    .mainabout h2{
+        margin-left: 20%;
+    }
+    .mainabout button{
+        width: 75%;
+        margin-top: 2%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+        font-size: 2rem;
+    }
+    .projects{
+        width: 90%;
+        margin-top: 25%;
+        margin-left: 20%;
+    }
+    .row1, .row2{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 75%;
+    }
+    .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8{
+        height:40%;
+        width: 40%;
+    }
+    footer{
+        height: 40vh;
+    }
+    /* .one{
+        order: 1;
+    }
+    .two{
+        order: 2;
+    }  */
 }
